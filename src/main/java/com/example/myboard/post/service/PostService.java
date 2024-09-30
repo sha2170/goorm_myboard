@@ -40,6 +40,7 @@ public class PostService {
                 .build();
     }
 
+
     public PostViewResponse view(@Valid PostViewRequest postViewRequest) {
         var entity =  postRepository.findFirstByIdAndStatusOrderByIdDesc(postViewRequest.getPostId(), "REGISTERED")  // Optional
                 .map( it->{

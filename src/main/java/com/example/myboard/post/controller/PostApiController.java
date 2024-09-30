@@ -37,6 +37,7 @@ public class PostApiController {
         return postService.all();
     }
 
+
     @PostMapping("/delete")
     public void delete(
             @Valid @RequestBody PostViewRequest postViewRequest

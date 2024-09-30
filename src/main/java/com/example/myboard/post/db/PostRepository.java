@@ -12,4 +12,5 @@ public interface PostRepository extends JpaRepository<PostEntity, Long> {
 
     // 모든 게시글 조회 시 삭제되지 않은 글만 가져오기
     public List<PostEntity> findAllByStatusOrderByIdDesc(String status);
+
 }
